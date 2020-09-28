@@ -1,3 +1,11 @@
+// application greeting before questioning..
+
+console.log("Hello! This is command line application will help you generate profiles for your team. Let's get started.")
+
+
+const employees = [];
+
+
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
@@ -14,50 +22,240 @@ const render = require("./lib/htmlRenderer");
 
 
 
-// manager's inquirer prompts.
-
-prompt.inquirer ([
-
-    {
-        type: "input",
-        message: "What is the name of your Manager?",
-        name: "name",
-        default: "Manager's Name"
-        
-    },
-
-    {
-
-        type: "input",
-        message: "What is your Manager's ID number?",
-        name: "id",
-        default: "1"
-
-    },
-
-    {
-
-        type: "input",
-        message: "What is your Manager's e-mail address?",
-        name: "email",
-        default: "manager@email.com"
-
-    },
-
-    {
-
-        type: "input",
-        message: "What is your Manager's office number?",
-        name: "officeNumber",
-        default: "1"
-        
-    }
-
-]);
+// Manager's inquirer prompts.
 
 
+function managerCreation() {
+
+    inquirer.prompt([
+
+        {
+            type: "input",
+            message: "What is the name of your team's Manager?",
+            name: "name",
+            default: "Manager's Name"
+
+        },
+
+        {
+
+            type: "input",
+            message: "What is your Manager's ID number?",
+            name: "id",
+            default: "Manager's ID Number"
+
+        },
+
+        {
+
+            type: "input",
+            message: "What is your Manager's e-mail address?",
+            name: "email",
+            default: "manager@email.com"
+
+        },
+
+        {
+
+            type: "input",
+            message: "What is your Manager's office number?",
+            name: "officeNumber",
+            default: "Manager's Office Number"
+
+        }
+
+    ])
+
+        .then((managerResponses) => {
+
+            let manager = new Manager(managerResponses.name, managerResponses.id, managerResponses.email, managerResponses.officeNumber);
+
+            employees.push(manager);
+
+            employeeCreation();
+
+        })
+
+}
 
 
+
+
+// Intern's inquirer prompts.
+
+
+function internCreation() {
+
+    inquirer.prompt([
+
+        {
+            type: "input",
+            message: "What is the name of this Intern?",
+            name: "name",
+            default: "Intern's Name"
+
+        },
+
+        {
+
+            type: "input",
+            message: "What is your Intern's ID number?",
+            name: "id",
+            default: "Manager's ID Number"
+
+        },
+
+        {
+
+            type: "input",
+            message: "What is your Intern's e-mail address?",
+            name: "email",
+            default: "intern@email.com"
+
+        },
+
+        {
+
+            type: "input",
+            message: "What School has your Intern been attending?",
+            name: "school",
+            default: "Intern's School"
+
+        }
+
+    ])
+
+        .then((internResponses) => {
+
+            let intern = new Intern(internResponses.name, internResponses.id, internResponses.email, internResponses.school);
+
+            employees.push(intern);
+
+            employeeCreation();
+
+        })
+
+}
+
+
+
+// Engineer's inquirer prompts.
+
+
+function engineerCreation() {
+
+    inquirer.prompt([
+
+        {
+            type: "input",
+            message: "What is the name of this Engineer?",
+            name: "name",
+            default: "Engineer's Name"
+
+        },
+
+        {
+
+            type: "input",
+            message: "What is your Engineer's ID number?",
+            name: "id",
+            default: "Manager's ID Number"
+
+        },
+
+        {
+
+            type: "input",
+            message: "What is your Engineer's e-mail address?",
+            name: "email",
+            default: "engineer@email.com"
+
+        },
+
+        {
+
+            type: "input",
+            message: "What is your Engineer's GitHub username?",
+            name: "github",
+            default: "Engineer's GitHub username"
+
+        }
+
+    ])
+
+        .then((engineerResponses) => {
+
+            let engineer = new Engineer(engineerResponses.name, engineerResponses.id, engineerResponses.email, engineerResponses.github);
+
+            employees.push(engineer);
+
+            employeeCreation();
+
+        })
+
+}
+
+
+
+// application order and list selection for new team member creation
+
+managerCreation()
+
+function employeeCreation() {
+
+    inquirer.prompt([
+
+
+        {
+
+            type: "list",
+            message: "Please select an employee type to create a new profile.",
+            name: "employeeSelection",
+            choices:
+
+                [
+                    "Engineer",
+                    "Intern",
+                    "I'm done adding employees."
+                ]
+
+
+        }
+
+    ])
+
+        .then((selectionType) => {
+
+             if (selectionType.employeeSelection === "Engineer") {
+
+                engineerCreation()
+
+
+            } if (selectionType.employeeSelection === "Intern") {
+
+                internCreation()
+
+
+            } else {
+
+                const html = render(employees);
+
+                fs.writeFile(outputPath, html, err => {
+
+                    if (err) {
+
+                        return console.log(err);
+
+                    };
+
+                });
+            }
+
+        });
+  
+  }
+
+  console.log("You've successfully generated your team profile. Enjoy!")
 
 
 
