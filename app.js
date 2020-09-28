@@ -1,6 +1,6 @@
 // application greeting before questioning..
 
-console.log("Hello! This is command line application will help you generate profiles for your team. Let's get started.")
+console.log(" \n \n \n Hello! This is command line application will help you generate profiles for your team. Let's get started. \n \n \n ")
 
 
 const employees = [];
@@ -31,7 +31,7 @@ function managerCreation() {
 
         {
             type: "input",
-            message: "What is the name of your team's Manager?",
+            message: " \n \n \n What is the name of your team's Manager? \n \n \n ",
             name: "name",
             default: "Manager's Name"
 
@@ -40,7 +40,7 @@ function managerCreation() {
         {
 
             type: "input",
-            message: "What is your Manager's ID number?",
+            message: " \n \n \n What is your Manager's ID number? \n \n \n ",
             name: "id",
             default: "Manager's ID Number"
 
@@ -49,7 +49,7 @@ function managerCreation() {
         {
 
             type: "input",
-            message: "What is your Manager's e-mail address?",
+            message: " \n \n \n What is your Manager's e-mail address? \n \n \n ",
             name: "email",
             default: "manager@email.com"
 
@@ -58,7 +58,7 @@ function managerCreation() {
         {
 
             type: "input",
-            message: "What is your Manager's office number?",
+            message: " \n \n \n What is your Manager's office number? \n \n \n ",
             name: "officeNumber",
             default: "Manager's Office Number"
 
@@ -90,7 +90,7 @@ function internCreation() {
 
         {
             type: "input",
-            message: "What is the name of this Intern?",
+            message: " \n \n \n What is the name of this Intern? \n \n \n ",
             name: "name",
             default: "Intern's Name"
 
@@ -99,7 +99,7 @@ function internCreation() {
         {
 
             type: "input",
-            message: "What is your Intern's ID number?",
+            message: " \n \n \n What is your Intern's ID number? \n \n \n ",
             name: "id",
             default: "Manager's ID Number"
 
@@ -108,7 +108,7 @@ function internCreation() {
         {
 
             type: "input",
-            message: "What is your Intern's e-mail address?",
+            message: " \n \n \n What is your Intern's e-mail address? \n \n \n ",
             name: "email",
             default: "intern@email.com"
 
@@ -117,7 +117,7 @@ function internCreation() {
         {
 
             type: "input",
-            message: "What School has your Intern been attending?",
+            message: " \n \n \n What School has your Intern been attending? \n \n \n ",
             name: "school",
             default: "Intern's School"
 
@@ -148,7 +148,7 @@ function engineerCreation() {
 
         {
             type: "input",
-            message: "What is the name of this Engineer?",
+            message: " \n \n \n What is the name of this Engineer? \n \n \n ",
             name: "name",
             default: "Engineer's Name"
 
@@ -157,7 +157,7 @@ function engineerCreation() {
         {
 
             type: "input",
-            message: "What is your Engineer's ID number?",
+            message: " \n \n \n What is your Engineer's ID number? \n \n \n ",
             name: "id",
             default: "Manager's ID Number"
 
@@ -166,7 +166,7 @@ function engineerCreation() {
         {
 
             type: "input",
-            message: "What is your Engineer's e-mail address?",
+            message: " \n \n \n What is your Engineer's e-mail address? \n \n \n ",
             name: "email",
             default: "engineer@email.com"
 
@@ -175,7 +175,7 @@ function engineerCreation() {
         {
 
             type: "input",
-            message: "What is your Engineer's GitHub username?",
+            message: " \n \n \n What is your Engineer's GitHub username? \n \n \n ",
             name: "github",
             default: "Engineer's GitHub username"
 
@@ -209,7 +209,7 @@ function employeeCreation() {
         {
 
             type: "list",
-            message: "Please select an employee type to create a new profile.",
+            message: " \n \n \n Please select an employee type to create a new profile. \n \n \n ",
             name: "employeeSelection",
             choices:
 
@@ -245,17 +245,24 @@ function employeeCreation() {
                     if (err) {
 
                         return console.log(err);
+                        
 
                     };
 
+
                 });
+
+
+                console.log(" \n \n \n You've successfully generated your team profile. Enjoy! \n \n \n ")
+
             }
 
-        });
-  
-  }
 
-  console.log("You've successfully generated your team profile. Enjoy!")
+        });
+
+  
+  };
+
 
 
 
