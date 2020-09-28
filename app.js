@@ -1,6 +1,6 @@
 // application greeting before questioning..
 
-console.log(" \n \n \n Hello! This is command line application will help you generate profiles for your team. Let's get started. \n \n \n ")
+console.log(" \n \n \n Hello! This is a command line application that will help you generate profiles for your team. Let's get started. \n \n \n ")
 
 
 const employees = [];
@@ -198,6 +198,8 @@ function engineerCreation() {
 
 
 // application order and list selection for new team member creation
+// after user has selected the amount of employees they would like profiled ..
+// .. render(employees), then fs.writeFile begins the html rendering via outputPath + html
 
 managerCreation()
 
@@ -231,7 +233,7 @@ function employeeCreation() {
                 engineerCreation()
 
 
-            } if (selectionType.employeeSelection === "Intern") {
+            } else if (selectionType.employeeSelection === "Intern") {
 
                 internCreation()
 
