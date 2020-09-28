@@ -11,6 +11,71 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./lib/htmlRenderer");
 
 
+
+
+
+// manager's inquirer prompts.
+
+prompt.inquirer ([
+
+    {
+        type: "input",
+        message: "What is the name of your Manager?",
+        name: "name",
+        default: "Manager's Name"
+        
+    },
+
+    {
+
+        type: "input",
+        message: "What is your Manager's ID number?",
+        name: "id",
+        default: "1"
+
+    },
+
+    {
+
+        type: "input",
+        message: "What is your Manager's e-mail address?",
+        name: "email",
+        default: "manager@email.com"
+
+    },
+
+    {
+
+        type: "input",
+        message: "What is your Manager's office number?",
+        name: "officeNumber",
+        default: "1"
+        
+    }
+
+]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// assignment go-by reference commenting
+
+
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
