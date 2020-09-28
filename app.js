@@ -1,4 +1,5 @@
-// application greeting before questioning..
+
+// Application greeting before questioning begins..
 
 console.log(" \n \n \n Hello! This is a command line application that will help you generate profiles for your team. Let's get started. \n \n \n ")
 
@@ -280,7 +281,23 @@ function employeeCreation() {
 
 
 
-// assignment go-by reference commenting
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// assignment go-by reference commenting.
+// all items below have been checklisted and are functional.
 
 
 // Write code to use inquirer to gather information about the development team members,
