@@ -1,32 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Team</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c502137733.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>WEB DEV TEAM</title>
+    
+        <!--BootStrap CDN-->
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <!-- Font Awesome-->
+        
+        <script src="https://kit.fontawesome.com/c502137733.js"></script>
+    
+        <!-- NOTO SANS TC // via GOOGLE FONTS-->
+    
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&display=swap" rel="stylesheet">
+    
+    
+        <style>
+            a {
+    
+                color: #F9B303;
+                text-decoration: none !important;
+    
+            }
+    
+    
+            a:hover {
+    
+                color: #FD720D;
+    
+            }
+    
+    
+    
+            .team-heading {
+    
+                background-color: #F9B303;
+                padding-top: 15px;
+                padding-bottom: 15px;
+    
+    
+            }
+    
+    
+            body {
+    
+                font-family: 'Noto Sans TC', sans-serif;
+                color: #161616;
+                background-color: #a0a0a0;
+    
+            }
+    
+            .card-body {
+    
+                background-color: #8E918F;
+    
+            }
+    
+            .list-group-item {
+    
+                background-color: #999b99;
+                font-weight: bold;
+                border-width: 2px;
+                border-color: black;
+                font-size: 16px;
+    
+            }
+    
+    
+            .employee-card {
+    
+                min-width: 330px;
+                max-width: 330px;
+                margin: 50px;
+                border: 0;
+                box-shadow: 10px 10px 9px #000;
+    
+            }
+    
+            .card-header {
+    
+                background-color: #F9B303;
+                border-bottom-style: none;
+                height: 130px;
+                padding: 20px;
+    
+            }
+    
+    
+            h1 {
+    
+                font-size: 40px;
+                text-shadow: 0.7px 0.7px 0.7px #474747;
+    
+            }
+    
+    
+            h2 {
+    
+                font-weight: bold;
+                font-size: 30px;
+                text-shadow: 0.3px 0.3px 0.3px #474747;
+            }
+    
+    
+            h3 {
+    
+                font-size: 20px;
+                font-weight: bold;
+    
+            }
 
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading">
-                <h1 class="text-center">My Team</h1>
+        </style>
+    
+    </head>
+    
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 jumbotron mb-3 team-heading">
+                    <h1 class="text-center">WEB DEV TEAM <i class="fa fa-users fa-sm" aria-hidden="true"></i></h1>
+                </div>
             </div>
         </div>
-    </div>
     <div class="container">
         <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
+            <div class="team-area card-deck justify-content-center">
                 {{ team }}
             </div>
         </div>
     </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
 
 </html>
