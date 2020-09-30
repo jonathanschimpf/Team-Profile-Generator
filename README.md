@@ -113,8 +113,7 @@ View a video overview on usage here:
 
 <p>&nbsp;<p>
 
-
-![Generated README](assets/Web-Dev-Team-Screengrab.jpg)
+[![Sample](assets/Web-Dev-Team-Screengrab.jpg)](https://jonathanschimpf.github.io/Team-Profile-Generator/)
 
 <p>&nbsp;<p>
 
