@@ -22,7 +22,6 @@ const render = require("./lib/htmlRenderer");
 
 
 
-
 // Manager's inquirer prompts.
 
 
