@@ -126,7 +126,7 @@ View a video overview on usage here:
 
 <p>&nbsp;<p>
 
-(♥ The Office // For Demo Purposes Only)
+(‏‏‎ ‎♥ ‏‏‎ ‎The Office // For Demo Purposes Only‏‏‎ ‎)
 
 <p>&nbsp;<p>
 
