@@ -105,7 +105,7 @@ These prompts are possible via the `inquirer` package. The application is driven
 
 View a video overview on usage here:
 
-[![IMAGE](assets/video_screen_grab.jpg)](https://drive.google.com/file/d/1qg8JFvDuz91SOhHopfzs-cpPsqSiGiiz/view?usp=sharing) 
+[![IMAGE](Assets/video_screen_grab.jpg)](https://drive.google.com/file/d/1qg8JFvDuz91SOhHopfzs-cpPsqSiGiiz/view?usp=sharing) 
 
 <p>&nbsp;<p>
 
@@ -113,7 +113,7 @@ View a video overview on usage here:
 
 <p>&nbsp;<p>
 
-[![Sample](assets/Web-Dev-Team-Screengrab.jpg)](https://jonathanschimpf.github.io/Team-Profile-Generator/)
+[![Sample](Assets/Web-Dev-Team-Screengrab.jpg)](https://jonathanschimpf.github.io/Team-Profile-Generator/)
 
 <p>&nbsp;<p>
 
