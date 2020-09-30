@@ -79,6 +79,15 @@ test/          // jest tests
 app.js         // Runs the application
 ```
 
+
+
+<p>&nbsp;<p>
+
+(‏‏‎ ‎`/docs` + `/assets` ‏‏‎ ‎have been added to the repo for GitHub presentation purposes only.‏‏‎ ‎)
+
+<p>&nbsp;<p>
+
+
 ---
 
 
@@ -114,6 +123,10 @@ View a video overview on usage here:
 <p>&nbsp;<p>
 
 [![Sample](Assets/Web-Dev-Team-Screengrab.jpg)](https://jonathanschimpf.github.io/Team-Profile-Generator/)
+
+<p>&nbsp;<p>
+
+(♥ The Office // For Demo Purposes Only)
 
 <p>&nbsp;<p>
 
