@@ -20,7 +20,7 @@ This template engine is a command line interface application that runs via Node.
 <p>&nbsp;<p>
 
 
-View a team profile sample that was directly generated using this application here =>‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎[` team.html `]()
+View a team profile sample that was directly generated using this application here =>‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎[` Web.Dev.Team Sample `](https://jonathanschimpf.github.io/Team-Profile-Generator/)
 
 
 <p>&nbsp;<p>
@@ -118,7 +118,7 @@ View a video overview on usage here:
 
 <p>&nbsp;<p>
 
-This is 
+
 ---
 
 
